@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich RNG Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: black;
+            color: white;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: red;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            max-width: 600px;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid white;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #444;
+        }
+        .item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .item img {
+            max-width: 50px;
+            max-height: 50px;
+            margin-right: 10px;
+        }
+        .item label {
+            margin-bottom: 0;
+            flex: 1;
+        }
+        .item input {
+            margin-left: 10px;
+            max-width: 100px;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            .item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .item img {
+                margin-bottom: 10px;
+            }
+            .item input {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Rich RNG Calculator</h1>
+    
+    <table>
+        <tr>
+            <th style="color:red;">Player 1 Offer</th>
+            <th style="color:red;">Player 2 Offer</th>
+        </tr>
+        <tr>
+            <td id="player1"></td>
+            <td id="player2"></td>
+        </tr>
+    </table>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html

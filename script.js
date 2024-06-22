@@ -47,4 +47,4 @@ function calculate() {
 }
 
 // Initial calculation when the page loads
-calculate(
+calculate()
